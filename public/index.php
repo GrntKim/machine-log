@@ -29,7 +29,7 @@
 
     $visitCount = (int) $db->query("SELECT COUNT(*) FROM visits")->fetchColumn();
 
-    function e($value): string {
+    function e(mixed $value): string {
         return htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
     }
 
